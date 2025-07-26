@@ -1,0 +1,82 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffe5b4 0%, #b4f0ff 100%);
+  position: relative;
+}
+
+.home-title {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  font-size: 8.4rem;
+  font-weight: 700;
+  color: #d72660;
+  text-align: center;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.home-title-main, .home-title-outline {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #d72660;
+  opacity: 1;
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+}
+
+.card-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 2.5rem;
+  z-index: 10;
+}
+
+.home-card {
+  width: 200px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(215,38,96,0.08);
+  background: #fff;
+  color: #d72660;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.home-card:hover {
+  box-shadow: 0 4px 24px 0 rgba(215,38,96,0.18);
+  transform: translateY(-4px) scale(1.04);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem; // increased gap between emoji and text
+}
+
+.card-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #d72660;
+  letter-spacing: 0.5px;
+}

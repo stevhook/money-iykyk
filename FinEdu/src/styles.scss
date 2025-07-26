@@ -1,10 +1,11 @@
-
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
 // components according to the Material 3 design spec.
 // Learn more about theming and how to use it for your application's
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Monoton&display=swap');
 
 html {
   @include mat.theme((
@@ -24,7 +25,11 @@ html {
   // Set a default background, font and text colors for the application using
   // Angular Material's system-level CSS variables. Learn more about these
   // variables at https://material.angular.dev/guide/system-variables
-  background-color: var(--mat-sys-surface);
+  background-color: var(--mat-mdc-background, #ffe5b4); // fallback to pastel peach, all lowercase
+  background-image: radial-gradient(circle at 20% 20%, #ffd6e0 0%, transparent 60%),
+    radial-gradient(circle at 80% 80%, #b4f0ff 0%, transparent 60%),
+    radial-gradient(circle at 50% 90%, #f7f7b4 0%, transparent 60%);
+  /* Pastel peach base with playful pastel accent gradients */
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
 }/* You can add global styles to this file, and also import other style files */
