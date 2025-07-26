@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="NxAngularConfigService" workspaceLocation="file://$PROJECT_DIR$/FinEdu/nx.json">
+    <projects>
+      <project name="FinEdu" file="file://$PROJECT_DIR$/FinEdu/apps/FinEdu/project.json" />
+      <project name="FinEdu-e2e" file="file://$PROJECT_DIR$/FinEdu/apps/FinEdu-e2e/project.json" />
+    </projects>
+  </component>
+</project>
